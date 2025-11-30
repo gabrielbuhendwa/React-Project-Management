@@ -1,4 +1,4 @@
-
+import Input from "./Input.jsx";
 
 export default function NewProject() {
     return <div>
