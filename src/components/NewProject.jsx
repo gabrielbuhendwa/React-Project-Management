@@ -11,7 +11,7 @@ export default function NewProject() {
             </p>
             <p>
                 <label>Description</label>
-                <input />
+                <textarea />
             </p>
             <p>
                 <label>Due Date</label>
