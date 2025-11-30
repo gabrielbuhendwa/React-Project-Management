@@ -1,12 +1,12 @@
 export default function ProjectsSidebar() {
   return (
-    <aside>
+    <aside className="w-1/3 px-8 py-16 bg-stone-900 text-stone-50">
       <h2>Your Projects are here</h2>
       <div>
         <button>+ Add Project</button>
       </div>
       <ul>
-        {/* List items would go here */}
+
       </ul>
     </aside>
   );
