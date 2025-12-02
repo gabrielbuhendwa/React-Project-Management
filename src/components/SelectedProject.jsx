@@ -9,8 +9,8 @@ export default function SelectedProject({project}){
     return (
     <div className="W-[35rem] mt-16 flex items-center justify-between">
         <header className="pb-4 mb-4 border-b-2 border-stone-300 ">
-            <div>
-                <h1>{project.title}</h1>
+            <div className="flex items-center justify-between">
+                <h1 className="text-3xl font-bold text-stone-600 mb-2">{project.title}</h1>
                 <button>Delete</button>
             </div>
             <p>{formattedDate}</p>
