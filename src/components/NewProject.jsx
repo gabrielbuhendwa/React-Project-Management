@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 
 import Input from './Input.jsx';
+import Modal from './Modal.jsx'
 
 export default function NewProject({ onAdd }) {
   const title = useRef();
@@ -13,7 +14,7 @@ export default function NewProject({ onAdd }) {
     const enteredDueDate = dueDate.current.value;
 
     if (enteredTitle.trim() === '' || enteredDescription.trim() === '' || enteredDueDate.trim() === ''){
-      
+
     }
 
     onAdd({
@@ -24,6 +25,8 @@ export default function NewProject({ onAdd }) {
   }
 
   return (
+    <>
+    <Modal/ >
     <div className="w-[35rem] mt-16">
       <menu className="flex items-center justify-end gap-4 my-4">
         <li>
@@ -46,5 +49,6 @@ export default function NewProject({ onAdd }) {
         <Input type="date" ref={dueDate} label="Due Date" />
       </div>
     </div>
+    </>
   );
 }
