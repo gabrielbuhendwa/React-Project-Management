@@ -7,14 +7,14 @@ export default function SelectedProject({project}){
     });
 
     return (
-    <div>
-        <header>
+    <div className="W-[35rem] mt-16 flex items-center justify-between">
+        <header className="pb-4 mb-4 border-b-2 border-stone-300 ">
             <div>
                 <h1>{project.title}</h1>
                 <button>Delete</button>
             </div>
-            <p>DATE</p>
-            <p>DESCRIPTION</p>
+            <p>{formattedDate}</p>
+            <p>{project.description}</p>
         </header>
         TASKS
     </div>
