@@ -68,7 +68,7 @@ function App() {
     (project) => project.id === projectsState.selectedProjectId
   );
 
-  let content = <SelectedProject project={selectedProject} />;
+  let content = <SelectedProject project={selectedProject} onDelete={handleDeletedProject}/>;
 
   if (projectsState.selectedProjectId === null) {
     content = (
